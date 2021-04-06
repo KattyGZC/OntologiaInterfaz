@@ -26,6 +26,7 @@ class IndexView(TemplateView):
         graph = default_onto.as_rdflib_graph()
         qs = ''
         op = ''
+        qresult = []
         if request.method == 'POST':
             for key, value in request.POST.items():
                 op = value
@@ -42,6 +43,7 @@ class IndexView(TemplateView):
                     ?asp au:nombre ?Aspirante .
                     ?cp au:carrera ?Cupo 
                 } """
+                qresult.append(('Cupo','Aspirante'))
             elif op == '2':
                 qs = """ PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
                     PREFIX owl: <http://www.w3.org/2002/07/owl#>
@@ -54,6 +56,7 @@ class IndexView(TemplateView):
                                 ?a au:nombre ?Aspirante .
                                 ?ptj au:puntaje ?Examen 
                 } """
+                qresult.append(('Aspirante','Puntaje'))
             
             elif op == '3':
                 qs = """ PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -67,6 +70,8 @@ class IndexView(TemplateView):
                                 ?i au:codigo ?Inscripcion .
                                 ?cr au:nombre ?CentroRegulacion }
                 """
+                qresult.append(('Inscripción', 'Centro de Regulación'))
+
             elif op == '4':
                 qs = """ PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
                     PREFIX owl: <http://www.w3.org/2002/07/owl#>
@@ -79,6 +84,7 @@ class IndexView(TemplateView):
                                 ?a au:nombre ?Aspirante .
                                 ?exm au:fecha ?Fecha }
                 """
+                qresult.append(('Aspirante','Fecha Examen'))
             
             elif op == '5':
                 qs = """ PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -92,9 +98,10 @@ class IndexView(TemplateView):
                                 ?p au:fecha_inicio ?Postulacion .
                                 ?a au:nombre ?Aspirante }
                 """
+                qresult.append(('Fecha Inicio Postulación','Aspirante'))
             
             elif op == '6':
-                                    qs = """ PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+                qs = """ PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
                     PREFIX owl: <http://www.w3.org/2002/07/owl#>
                     PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
                     PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
@@ -105,6 +112,7 @@ class IndexView(TemplateView):
                                 ?p au:fecha_fin ?Postulacion .
                                 ?a au:nombre ?Aspirante }
                 """
+                qresult.append(('Fecha fin postulación', 'Aspirante'))
                 
             elif op == '7':
                 qs = """ PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -118,6 +126,7 @@ class IndexView(TemplateView):
                                 ?a au:nombre ?Aspirante .
                                 ?i au:fecha_inicio ?Inscripcion }
                 """
+                qresult.append(('Aspirante','Fecha Inicio Inscripción'))
 
             elif op == '8':
                 qs = """ PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -131,6 +140,7 @@ class IndexView(TemplateView):
                                 ?c au:nombre ?Carrera .
                                 ?u au:nombre ?Universidad }
                 """
+                qresult.append(('Carrera','Universidad'))
 
             elif op == '9':
                 qs = """ PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -144,11 +154,11 @@ class IndexView(TemplateView):
                                 ?cp  au:carrera ?Cupo .
 		                        ?cr au:num_aspirantes ?Carrera }
                 """
+                qresult.append(('Nro cupos','Carerra'))
             else:
                 return HttpResponse('Sin valor')
 
             result = (graph.query(qs))
-            qresult = []
             for res in result:
                 res1 = str(res)
                 res2 = res1.replace('rdflib.term.Literal', '')
