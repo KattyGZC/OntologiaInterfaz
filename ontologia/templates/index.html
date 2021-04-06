@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+  {% block title %}<title>{{title}}</title>{% endblock %}
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+  <script src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
+    html,
+    body {
+        font-family: 'Yusei Magic', sans-serif;
+        min-height: 100%;
+        width: 100%;
+    }
+
+    .background {
+        background-image: url('https://images.vexels.com/media/users/3/166925/raw/29bea4762c52b19c54c867322e54a094-diseno-de-fondo-azul-abstracto.jpg');
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+    .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+
+  </style>
+</head>
+
+<body class="background">
+
+  <header class="navbar navbar-dark flex-column flex-md-row bd-navbar sticky-top" style="background-color: #020f818f;
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);">
+    <div>
+      <a href="{% url 'index' %}" style="text-decoration: none; font-size: 1.3em; font-weight: bold; color: #ffffff;">
+        <strong>Consultas Ontología del Proceso de Admisión Universitario</strong>
+      </a>
+    </div>
+  </header>
+
+  {% block content %}
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-6" style="background-color: rgba(255, 255, 255, 0.5); margin: 10px;">
+        <form method="POST" action="{% url 'index' %}" id="search">
+          {% csrf_token %}
+          <div class="mb-2">
+            <label for="exampleInput" class="form-label">¿Qué consulta desea realizar?</label><br>
+            <select class="form-select" name="query" aria-label="Default select example">
+              <option selected>--Seleccione--</option>
+                <option value="1">¿Qué cupo es asignado a cada  aspirante?</option>
+                <option value="2">¿Cuál es el Puntaje del Aspirante?</option>
+                <option value="3">¿Dónde  registra la inscripción ?</option>
+                <option value="4">¿Que fecha rinde el examen?</option>
+                <option value="5">¿Que fecha inicia la postulación?</option>
+                <option value="6">¿Qué fecha finaliza  la postulación?</option>
+                <option value="7">¿Cuales son las fechas de inscripción?</option>
+                <option value="8">¿Qué tipo de carrera oferta cada universidad?</option>
+                <option value="9">¿Cuántos cupos tiene cada carrera?</option>
+            </select>
+          </div>
+          <button onclick="search_query()" type="button" class="btn btn-primary">Consultar</button>
+        </form>
+      </div>
+      <div class="col-5" style="margin: 10px;">
+        <div style="max-width: 600px;">
+          <table class="table table-striped table-hover table-sm table-dark">
+            <thead>
+              <tr>
+                <th scope="col">
+                  Columna 1
+                </th>
+                <th scope="col">
+                  Columna 2
+                </th>
+              </tr>
+            </thead>
+            <tbody id="row_query">        
+               
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  {% endblock %}
+</body>
+
+<footer class="bd-footer bg-light my-font" style="position: fixed; bottom: 0; width: 100%; ">
+  <div class="row justify-content-center">
+    <p>&copy; Proyecto de Tópicos Especiales de Software by Patricia Sambachi y Katherine Zambrano</p>
+  </div>
+  <div class="row justify-content-center">
+    <p>Todos los derechos reservados</p>
+  </div>
+</footer>
+<script>
+  function search_query(){
+    let data = new FormData($('#search').get(0));
+    $.ajax({
+            type: "POST",
+            url: "{% url 'index' %}",
+            data: data,
+            processData: false,
+            contentType: false,
+            success: function (qres) {
+                const regex = /[:"();¿?¡!]/gi
+                qres = qres.replace(regex, '')
+                qres = qres.replace(/[']/gi, '"')
+                result = JSON.parse(qres)
+                render(result)
+            },
+        })
+  }
+  
+  function render(result){
+    let row_query = document.getElementById('row_query')
+    let str = ''
+    result.map((value, key)=>{
+      if(key % 2 == 0){
+        str+= `<tr><td>${value}</td>`
+      }else{
+        str+= `<td>${value}</td></tr>`
+      }
+    })
+    row_query.innerHTML = str
+  }
+  
+</script>
+
+</html>

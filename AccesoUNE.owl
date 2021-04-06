@@ -1,0 +1,2114 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/labprocesos/ontologies/2021/2/ontologia-une"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/labprocesos/ontologies/2021/2/ontologia-une">
+    <Prefix name="" IRI="http://www.semanticweb.org/labprocesos/ontologies/2021/2/untitled-ontology-5#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="untitled-ontology-5" IRI="http://www.semanticweb.org/labprocesos/ontologies/2021/2/untitled-ontology-5#"/>
+    <Declaration>
+        <Class IRI="#Aspirante"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Carrera"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CentroRegulacion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cupo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Examen"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Inscripcion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Postulacion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Universidad"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Asigna"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#esAsignado"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#esOfertaPor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#esRealizadaPor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#esRecibidaPor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#ofrecenVarios"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#perteneceAl"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#realizaLa"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#recibeLa"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#rindeUn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#seRegistraEn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#tieneEnoferta"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#tieneVarias"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Aceptacion"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#carrera"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#cedula"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#codigo"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#dirreccion"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#fecha"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#fecha_fin"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#fecha_inicio"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hora"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#nacionalidad"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#nombre"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#num_aspirantes"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#num_opcion"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#puntaje"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#telefono"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AP1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AP10"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AP2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AP3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AP4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AP5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AP6"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AP7"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AP8"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AP9"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CA1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CA2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CA3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CA4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CA5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CR1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CR2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CR3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CU1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CU2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CU3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CU4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CU5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#EXM1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#EXM10"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#EXM2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#EXM3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#EXM4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#EXM5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#EXM6"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#EXM7"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#EXM8"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#EXM9"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#INS1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#INS2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#POST1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#POST2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#UN1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#UN2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#UN3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#UN4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#UN5"/>
+    </Declaration>
+    <ClassAssertion>
+        <Class IRI="#Aspirante"/>
+        <NamedIndividual IRI="#AP1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Aspirante"/>
+        <NamedIndividual IRI="#AP10"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Aspirante"/>
+        <NamedIndividual IRI="#AP2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Aspirante"/>
+        <NamedIndividual IRI="#AP3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Aspirante"/>
+        <NamedIndividual IRI="#AP4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Aspirante"/>
+        <NamedIndividual IRI="#AP5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Aspirante"/>
+        <NamedIndividual IRI="#AP6"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Aspirante"/>
+        <NamedIndividual IRI="#AP7"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Aspirante"/>
+        <NamedIndividual IRI="#AP8"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Aspirante"/>
+        <NamedIndividual IRI="#AP9"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Carrera"/>
+        <NamedIndividual IRI="#CA1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Carrera"/>
+        <NamedIndividual IRI="#CA2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Carrera"/>
+        <NamedIndividual IRI="#CA3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Carrera"/>
+        <NamedIndividual IRI="#CA4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Carrera"/>
+        <NamedIndividual IRI="#CA5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CentroRegulacion"/>
+        <NamedIndividual IRI="#CR1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CentroRegulacion"/>
+        <NamedIndividual IRI="#CR2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CentroRegulacion"/>
+        <NamedIndividual IRI="#CR3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Cupo"/>
+        <NamedIndividual IRI="#CU1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Cupo"/>
+        <NamedIndividual IRI="#CU2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Cupo"/>
+        <NamedIndividual IRI="#CU3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Cupo"/>
+        <NamedIndividual IRI="#CU4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Cupo"/>
+        <NamedIndividual IRI="#CU5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Examen"/>
+        <NamedIndividual IRI="#EXM1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Examen"/>
+        <NamedIndividual IRI="#EXM10"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Examen"/>
+        <NamedIndividual IRI="#EXM2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Examen"/>
+        <NamedIndividual IRI="#EXM3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Examen"/>
+        <NamedIndividual IRI="#EXM4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Examen"/>
+        <NamedIndividual IRI="#EXM5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Examen"/>
+        <NamedIndividual IRI="#EXM6"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Examen"/>
+        <NamedIndividual IRI="#EXM7"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Examen"/>
+        <NamedIndividual IRI="#EXM8"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Examen"/>
+        <NamedIndividual IRI="#EXM9"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Inscripcion"/>
+        <NamedIndividual IRI="#INS1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Inscripcion"/>
+        <NamedIndividual IRI="#INS2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Postulacion"/>
+        <NamedIndividual IRI="#POST1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Postulacion"/>
+        <NamedIndividual IRI="#POST2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Universidad"/>
+        <NamedIndividual IRI="#UN1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Universidad"/>
+        <NamedIndividual IRI="#UN2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Universidad"/>
+        <NamedIndividual IRI="#UN3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Universidad"/>
+        <NamedIndividual IRI="#UN4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Universidad"/>
+        <NamedIndividual IRI="#UN5"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#realizaLa"/>
+        <NamedIndividual IRI="#AP1"/>
+        <NamedIndividual IRI="#INS1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#rindeUn"/>
+        <NamedIndividual IRI="#AP1"/>
+        <NamedIndividual IRI="#EXM1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#realizaLa"/>
+        <NamedIndividual IRI="#AP10"/>
+        <NamedIndividual IRI="#INS1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#rindeUn"/>
+        <NamedIndividual IRI="#AP10"/>
+        <NamedIndividual IRI="#EXM10"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#realizaLa"/>
+        <NamedIndividual IRI="#AP2"/>
+        <NamedIndividual IRI="#INS2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#rindeUn"/>
+        <NamedIndividual IRI="#AP2"/>
+        <NamedIndividual IRI="#EXM2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#realizaLa"/>
+        <NamedIndividual IRI="#AP3"/>
+        <NamedIndividual IRI="#INS1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#rindeUn"/>
+        <NamedIndividual IRI="#AP3"/>
+        <NamedIndividual IRI="#EXM3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#realizaLa"/>
+        <NamedIndividual IRI="#AP4"/>
+        <NamedIndividual IRI="#INS1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#rindeUn"/>
+        <NamedIndividual IRI="#AP4"/>
+        <NamedIndividual IRI="#EXM4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#realizaLa"/>
+        <NamedIndividual IRI="#AP5"/>
+        <NamedIndividual IRI="#INS1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#rindeUn"/>
+        <NamedIndividual IRI="#AP5"/>
+        <NamedIndividual IRI="#EXM5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#realizaLa"/>
+        <NamedIndividual IRI="#AP6"/>
+        <NamedIndividual IRI="#INS2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#rindeUn"/>
+        <NamedIndividual IRI="#AP6"/>
+        <NamedIndividual IRI="#EXM6"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#realizaLa"/>
+        <NamedIndividual IRI="#AP7"/>
+        <NamedIndividual IRI="#INS2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#rindeUn"/>
+        <NamedIndividual IRI="#AP7"/>
+        <NamedIndividual IRI="#EXM7"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#realizaLa"/>
+        <NamedIndividual IRI="#AP8"/>
+        <NamedIndividual IRI="#INS2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#rindeUn"/>
+        <NamedIndividual IRI="#AP8"/>
+        <NamedIndividual IRI="#EXM8"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#realizaLa"/>
+        <NamedIndividual IRI="#AP9"/>
+        <NamedIndividual IRI="#INS2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#rindeUn"/>
+        <NamedIndividual IRI="#AP9"/>
+        <NamedIndividual IRI="#EXM9"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#esOfertaPor"/>
+        <NamedIndividual IRI="#CA1"/>
+        <NamedIndividual IRI="#UN1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ofrecenVarios"/>
+        <NamedIndividual IRI="#CA1"/>
+        <NamedIndividual IRI="#CU1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#esOfertaPor"/>
+        <NamedIndividual IRI="#CA2"/>
+        <NamedIndividual IRI="#UN2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ofrecenVarios"/>
+        <NamedIndividual IRI="#CA2"/>
+        <NamedIndividual IRI="#CU2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#esOfertaPor"/>
+        <NamedIndividual IRI="#CA3"/>
+        <NamedIndividual IRI="#UN3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ofrecenVarios"/>
+        <NamedIndividual IRI="#CA3"/>
+        <NamedIndividual IRI="#CU3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#esOfertaPor"/>
+        <NamedIndividual IRI="#CA4"/>
+        <NamedIndividual IRI="#UN4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ofrecenVarios"/>
+        <NamedIndividual IRI="#CA4"/>
+        <NamedIndividual IRI="#CU4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#esOfertaPor"/>
+        <NamedIndividual IRI="#CA5"/>
+        <NamedIndividual IRI="#UN5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ofrecenVarios"/>
+        <NamedIndividual IRI="#CA5"/>
+        <NamedIndividual IRI="#CU5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Asigna"/>
+        <NamedIndividual IRI="#CR1"/>
+        <NamedIndividual IRI="#CU1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Asigna"/>
+        <NamedIndividual IRI="#CR1"/>
+        <NamedIndividual IRI="#CU5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Asigna"/>
+        <NamedIndividual IRI="#CR2"/>
+        <NamedIndividual IRI="#CU2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Asigna"/>
+        <NamedIndividual IRI="#CR2"/>
+        <NamedIndividual IRI="#CU3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Asigna"/>
+        <NamedIndividual IRI="#CR3"/>
+        <NamedIndividual IRI="#CU4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#esAsignado"/>
+        <NamedIndividual IRI="#CU1"/>
+        <NamedIndividual IRI="#AP1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#esAsignado"/>
+        <NamedIndividual IRI="#CU1"/>
+        <NamedIndividual IRI="#AP3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#esAsignado"/>
+        <NamedIndividual IRI="#CU2"/>
+        <NamedIndividual IRI="#AP2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#esAsignado"/>
+        <NamedIndividual IRI="#CU2"/>
+        <NamedIndividual IRI="#AP4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#esAsignado"/>
+        <NamedIndividual IRI="#CU3"/>
+        <NamedIndividual IRI="#AP5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#esAsignado"/>
+        <NamedIndividual IRI="#CU3"/>
+        <NamedIndividual IRI="#AP7"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#esAsignado"/>
+        <NamedIndividual IRI="#CU4"/>
+        <NamedIndividual IRI="#AP6"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#esAsignado"/>
+        <NamedIndividual IRI="#CU4"/>
+        <NamedIndividual IRI="#AP8"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#esAsignado"/>
+        <NamedIndividual IRI="#CU5"/>
+        <NamedIndividual IRI="#AP10"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#esAsignado"/>
+        <NamedIndividual IRI="#CU5"/>
+        <NamedIndividual IRI="#AP9"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#perteneceAl"/>
+        <NamedIndividual IRI="#EXM1"/>
+        <NamedIndividual IRI="#AP1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#perteneceAl"/>
+        <NamedIndividual IRI="#EXM10"/>
+        <NamedIndividual IRI="#AP10"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#perteneceAl"/>
+        <NamedIndividual IRI="#EXM2"/>
+        <NamedIndividual IRI="#AP2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#perteneceAl"/>
+        <NamedIndividual IRI="#EXM3"/>
+        <NamedIndividual IRI="#AP3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#perteneceAl"/>
+        <NamedIndividual IRI="#EXM4"/>
+        <NamedIndividual IRI="#AP4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#perteneceAl"/>
+        <NamedIndividual IRI="#EXM5"/>
+        <NamedIndividual IRI="#AP5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#perteneceAl"/>
+        <NamedIndividual IRI="#EXM6"/>
+        <NamedIndividual IRI="#AP6"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#perteneceAl"/>
+        <NamedIndividual IRI="#EXM7"/>
+        <NamedIndividual IRI="#AP7"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#perteneceAl"/>
+        <NamedIndividual IRI="#EXM8"/>
+        <NamedIndividual IRI="#AP8"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#perteneceAl"/>
+        <NamedIndividual IRI="#EXM9"/>
+        <NamedIndividual IRI="#AP9"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#seRegistraEn"/>
+        <NamedIndividual IRI="#INS1"/>
+        <NamedIndividual IRI="#CR1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#seRegistraEn"/>
+        <NamedIndividual IRI="#INS1"/>
+        <NamedIndividual IRI="#CR3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#seRegistraEn"/>
+        <NamedIndividual IRI="#INS2"/>
+        <NamedIndividual IRI="#CR2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#esRealizadaPor"/>
+        <NamedIndividual IRI="#POST1"/>
+        <NamedIndividual IRI="#AP1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#esRealizadaPor"/>
+        <NamedIndividual IRI="#POST1"/>
+        <NamedIndividual IRI="#AP10"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#esRealizadaPor"/>
+        <NamedIndividual IRI="#POST1"/>
+        <NamedIndividual IRI="#AP3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#esRealizadaPor"/>
+        <NamedIndividual IRI="#POST1"/>
+        <NamedIndividual IRI="#AP4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#esRealizadaPor"/>
+        <NamedIndividual IRI="#POST1"/>
+        <NamedIndividual IRI="#AP5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#esRealizadaPor"/>
+        <NamedIndividual IRI="#POST1"/>
+        <NamedIndividual IRI="#CR3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#esRecibidaPor"/>
+        <NamedIndividual IRI="#POST1"/>
+        <NamedIndividual IRI="#CR1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tieneEnoferta"/>
+        <NamedIndividual IRI="#POST1"/>
+        <NamedIndividual IRI="#CR1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tieneEnoferta"/>
+        <NamedIndividual IRI="#POST1"/>
+        <NamedIndividual IRI="#CR3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#esRealizadaPor"/>
+        <NamedIndividual IRI="#POST2"/>
+        <NamedIndividual IRI="#AP2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#esRealizadaPor"/>
+        <NamedIndividual IRI="#POST2"/>
+        <NamedIndividual IRI="#AP6"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#esRealizadaPor"/>
+        <NamedIndividual IRI="#POST2"/>
+        <NamedIndividual IRI="#AP7"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#esRealizadaPor"/>
+        <NamedIndividual IRI="#POST2"/>
+        <NamedIndividual IRI="#AP8"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#esRealizadaPor"/>
+        <NamedIndividual IRI="#POST2"/>
+        <NamedIndividual IRI="#AP9"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#esRecibidaPor"/>
+        <NamedIndividual IRI="#POST2"/>
+        <NamedIndividual IRI="#CR2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tieneEnoferta"/>
+        <NamedIndividual IRI="#POST2"/>
+        <NamedIndividual IRI="#CR2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tieneVarias"/>
+        <NamedIndividual IRI="#UN1"/>
+        <NamedIndividual IRI="#CA1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tieneVarias"/>
+        <NamedIndividual IRI="#UN2"/>
+        <NamedIndividual IRI="#CA2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tieneVarias"/>
+        <NamedIndividual IRI="#UN3"/>
+        <NamedIndividual IRI="#CA3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tieneVarias"/>
+        <NamedIndividual IRI="#UN4"/>
+        <NamedIndividual IRI="#CA4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tieneVarias"/>
+        <NamedIndividual IRI="#UN5"/>
+        <NamedIndividual IRI="#CA5"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cedula"/>
+        <NamedIndividual IRI="#AP1"/>
+        <Literal>100200300-4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#codigo"/>
+        <NamedIndividual IRI="#AP1"/>
+        <Literal>AS001</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#dirreccion"/>
+        <NamedIndividual IRI="#AP1"/>
+        <Literal>Ambato</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nacionalidad"/>
+        <NamedIndividual IRI="#AP1"/>
+        <Literal>Ecuatorioana</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#AP1"/>
+        <Literal>Katherine Zambrano</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#telefono"/>
+        <NamedIndividual IRI="#AP1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0979175582</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cedula"/>
+        <NamedIndividual IRI="#AP10"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1767546789</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#codigo"/>
+        <NamedIndividual IRI="#AP10"/>
+        <Literal>AS010</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#dirreccion"/>
+        <NamedIndividual IRI="#AP10"/>
+        <Literal>Quito</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nacionalidad"/>
+        <NamedIndividual IRI="#AP10"/>
+        <Literal>Ecuatorioana</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#AP10"/>
+        <Literal>David Caiza</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#telefono"/>
+        <NamedIndividual IRI="#AP10"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0956443322</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cedula"/>
+        <NamedIndividual IRI="#AP2"/>
+        <Literal>172524622-5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#codigo"/>
+        <NamedIndividual IRI="#AP2"/>
+        <Literal>AS002</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#dirreccion"/>
+        <NamedIndividual IRI="#AP2"/>
+        <Literal>Machachi</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nacionalidad"/>
+        <NamedIndividual IRI="#AP2"/>
+        <Literal>Ecuantoriana</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#AP2"/>
+        <Literal>Patricia Sambachi</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#telefono"/>
+        <NamedIndividual IRI="#AP2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0980271799</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cedula"/>
+        <NamedIndividual IRI="#AP3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1654378211</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#codigo"/>
+        <NamedIndividual IRI="#AP3"/>
+        <Literal>AS003</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#dirreccion"/>
+        <NamedIndividual IRI="#AP3"/>
+        <Literal>Riobamba</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nacionalidad"/>
+        <NamedIndividual IRI="#AP3"/>
+        <Literal>Ecuatorioana</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#AP3"/>
+        <Literal>Jefferson Diaz</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#telefono"/>
+        <NamedIndividual IRI="#AP3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0955775433</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cedula"/>
+        <NamedIndividual IRI="#AP4"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0545326690</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#codigo"/>
+        <NamedIndividual IRI="#AP4"/>
+        <Literal>AS004</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#dirreccion"/>
+        <NamedIndividual IRI="#AP4"/>
+        <Literal>Latacunga</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nacionalidad"/>
+        <NamedIndividual IRI="#AP4"/>
+        <Literal>Ecuatorioana</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#AP4"/>
+        <Literal>Cristian Cruz</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#telefono"/>
+        <NamedIndividual IRI="#AP4"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0977609890</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cedula"/>
+        <NamedIndividual IRI="#AP5"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">17653431109</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#codigo"/>
+        <NamedIndividual IRI="#AP5"/>
+        <Literal>AS005</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#dirreccion"/>
+        <NamedIndividual IRI="#AP5"/>
+        <Literal>Sangolqui</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nacionalidad"/>
+        <NamedIndividual IRI="#AP5"/>
+        <Literal>Ecuatorioana</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#AP5"/>
+        <Literal>Wladimir Chicaiza</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#telefono"/>
+        <NamedIndividual IRI="#AP5"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0977632221</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cedula"/>
+        <NamedIndividual IRI="#AP6"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1877227600</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#codigo"/>
+        <NamedIndividual IRI="#AP6"/>
+        <Literal>AS006</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#dirreccion"/>
+        <NamedIndividual IRI="#AP6"/>
+        <Literal>Salcedo</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nacionalidad"/>
+        <NamedIndividual IRI="#AP6"/>
+        <Literal>Ecuatorioana</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#AP6"/>
+        <Literal>Paola Paneluisa</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#telefono"/>
+        <NamedIndividual IRI="#AP6"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0985234709</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cedula"/>
+        <NamedIndividual IRI="#AP7"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1456228800</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#codigo"/>
+        <NamedIndividual IRI="#AP7"/>
+        <Literal>AS007</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#dirreccion"/>
+        <NamedIndividual IRI="#AP7"/>
+        <Literal>Cuenca</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nacionalidad"/>
+        <NamedIndividual IRI="#AP7"/>
+        <Literal>Ecuatorioana</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#AP7"/>
+        <Literal>Susana Chilig</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#telefono"/>
+        <NamedIndividual IRI="#AP7"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0973322980</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cedula"/>
+        <NamedIndividual IRI="#AP8"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1765112205</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#codigo"/>
+        <NamedIndividual IRI="#AP8"/>
+        <Literal>AS008</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#dirreccion"/>
+        <NamedIndividual IRI="#AP8"/>
+        <Literal>Loja</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nacionalidad"/>
+        <NamedIndividual IRI="#AP8"/>
+        <Literal>Ecuatorioana</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#AP8"/>
+        <Literal>Mireya Romo</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#telefono"/>
+        <NamedIndividual IRI="#AP8"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0944568866</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cedula"/>
+        <NamedIndividual IRI="#AP9"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">02344578577</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#codigo"/>
+        <NamedIndividual IRI="#AP9"/>
+        <Literal>AS009</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#dirreccion"/>
+        <NamedIndividual IRI="#AP9"/>
+        <Literal>Napo</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nacionalidad"/>
+        <NamedIndividual IRI="#AP9"/>
+        <Literal>Ecuatorioana</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#AP9"/>
+        <Literal>Byron Tello</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#telefono"/>
+        <NamedIndividual IRI="#AP9"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0986332990</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#codigo"/>
+        <NamedIndividual IRI="#CA1"/>
+        <Literal>CA001</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#CA1"/>
+        <Literal>Ciencias de la Computación</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#num_aspirantes"/>
+        <NamedIndividual IRI="#CA1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">250</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#puntaje"/>
+        <NamedIndividual IRI="#CA1"/>
+        <Literal>800/1000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#codigo"/>
+        <NamedIndividual IRI="#CA2"/>
+        <Literal>CA002</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#CA2"/>
+        <Literal>CIencias Medicas</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#num_aspirantes"/>
+        <NamedIndividual IRI="#CA2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">450</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#puntaje"/>
+        <NamedIndividual IRI="#CA2"/>
+        <Literal>900/1000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#CA3"/>
+        <Literal>CA003</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#CA3"/>
+        <Literal>Ciencias de la Vida y de la Agricultura</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#num_aspirantes"/>
+        <NamedIndividual IRI="#CA3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">350</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#puntaje"/>
+        <NamedIndividual IRI="#CA3"/>
+        <Literal>940/1000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#CA4"/>
+        <Literal>CA004</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#CA4"/>
+        <Literal>Ciencias de la Energía y Mecánica</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#num_aspirantes"/>
+        <NamedIndividual IRI="#CA4"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">245</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#puntaje"/>
+        <NamedIndividual IRI="#CA4"/>
+        <Literal>850/1000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#CA5"/>
+        <Literal>CA005</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#CA5"/>
+        <Literal>Ciencias Administrativas, Económicas y de Comercio</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#num_aspirantes"/>
+        <NamedIndividual IRI="#CA5"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">500</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#puntaje"/>
+        <NamedIndividual IRI="#CA5"/>
+        <Literal>780/1000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#codigo"/>
+        <NamedIndividual IRI="#CR1"/>
+        <Literal>CR001</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#dirreccion"/>
+        <NamedIndividual IRI="#CR1"/>
+        <Literal>9 de Octubre, Quito 170143</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#CR1"/>
+        <Literal>Senescy-Quito</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#telefono"/>
+        <NamedIndividual IRI="#CR1"/>
+        <Literal>(02) 250-5660</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#codigo"/>
+        <NamedIndividual IRI="#CR2"/>
+        <Literal>CR002</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#dirreccion"/>
+        <NamedIndividual IRI="#CR2"/>
+        <Literal>Av. Luis Plaza Dañin, Guayaquil 090512</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#CR2"/>
+        <Literal>SENESCYT - Guayaquil</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#telefono"/>
+        <NamedIndividual IRI="#CR2"/>
+        <Literal>(04) 371-3325</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#codigo"/>
+        <NamedIndividual IRI="#CR3"/>
+        <Literal>CR003</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#dirreccion"/>
+        <NamedIndividual IRI="#CR3"/>
+        <Literal>Avenue España 912, Cuenca 010102</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#CR3"/>
+        <Literal>SENESCYT - CUENCA</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#telefono"/>
+        <NamedIndividual IRI="#CR3"/>
+        <Literal>(02) 250-5660</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Aceptacion"/>
+        <NamedIndividual IRI="#CU1"/>
+        <Literal>si</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#carrera"/>
+        <NamedIndividual IRI="#CU1"/>
+        <Literal>Ingenieria en Software</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#codigo"/>
+        <NamedIndividual IRI="#CU1"/>
+        <Literal>CU001</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#num_aspirantes"/>
+        <NamedIndividual IRI="#CU1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">35</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Aceptacion"/>
+        <NamedIndividual IRI="#CU2"/>
+        <Literal>si</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#carrera"/>
+        <NamedIndividual IRI="#CU2"/>
+        <Literal>Bioquimica Clinica</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#codigo"/>
+        <NamedIndividual IRI="#CU2"/>
+        <Literal>CU002</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#num_aspirantes"/>
+        <NamedIndividual IRI="#CU2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">25</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Aceptacion"/>
+        <NamedIndividual IRI="#CU3"/>
+        <Literal>Ingenieria en  Agropecuaria</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Aceptacion"/>
+        <NamedIndividual IRI="#CU3"/>
+        <Literal>SI</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#codigo"/>
+        <NamedIndividual IRI="#CU3"/>
+        <Literal>CU003</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#num_aspirantes"/>
+        <NamedIndividual IRI="#CU3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">45</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Aceptacion"/>
+        <NamedIndividual IRI="#CU4"/>
+        <Literal>Ingeniería Automotriz</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Aceptacion"/>
+        <NamedIndividual IRI="#CU4"/>
+        <Literal>SI</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#codigo"/>
+        <NamedIndividual IRI="#CU4"/>
+        <Literal>CU004</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#num_aspirantes"/>
+        <NamedIndividual IRI="#CU4"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">30</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Aceptacion"/>
+        <NamedIndividual IRI="#CU5"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">40</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Aceptacion"/>
+        <NamedIndividual IRI="#CU5"/>
+        <Literal>Administración de Empresas</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Aceptacion"/>
+        <NamedIndividual IRI="#CU5"/>
+        <Literal>SI</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#codigo"/>
+        <NamedIndividual IRI="#CU5"/>
+        <Literal>CU005</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#codigo"/>
+        <NamedIndividual IRI="#EXM1"/>
+        <Literal>EXM001</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fecha"/>
+        <NamedIndividual IRI="#EXM1"/>
+        <Literal>20/07/2020</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hora"/>
+        <NamedIndividual IRI="#EXM1"/>
+        <Literal>10:00 am</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#EXM1"/>
+        <Literal>EAES</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#puntaje"/>
+        <NamedIndividual IRI="#EXM1"/>
+        <Literal>852/1000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#codigo"/>
+        <NamedIndividual IRI="#EXM10"/>
+        <Literal>EXM010</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fecha"/>
+        <NamedIndividual IRI="#EXM10"/>
+        <Literal>20/07/2020</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hora"/>
+        <NamedIndividual IRI="#EXM10"/>
+        <Literal>10:00 am</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#EXM10"/>
+        <Literal>EAES</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#puntaje"/>
+        <NamedIndividual IRI="#EXM10"/>
+        <Literal>890/1000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#codigo"/>
+        <NamedIndividual IRI="#EXM2"/>
+        <Literal>EXM002</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fecha"/>
+        <NamedIndividual IRI="#EXM2"/>
+        <Literal>10/07/2021</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hora"/>
+        <NamedIndividual IRI="#EXM2"/>
+        <Literal>18:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#EXM2"/>
+        <Literal>EAES</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#puntaje"/>
+        <NamedIndividual IRI="#EXM2"/>
+        <Literal>950/1000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#codigo"/>
+        <NamedIndividual IRI="#EXM3"/>
+        <Literal>EXM003</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fecha"/>
+        <NamedIndividual IRI="#EXM3"/>
+        <Literal>20/07/2020</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hora"/>
+        <NamedIndividual IRI="#EXM3"/>
+        <Literal>11:00 am</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#EXM3"/>
+        <Literal>EAES</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#puntaje"/>
+        <NamedIndividual IRI="#EXM3"/>
+        <Literal>870/1000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#codigo"/>
+        <NamedIndividual IRI="#EXM4"/>
+        <Literal>EXM004</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fecha"/>
+        <NamedIndividual IRI="#EXM4"/>
+        <Literal>20/07/2020</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hora"/>
+        <NamedIndividual IRI="#EXM4"/>
+        <Literal>11:00 am</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#EXM4"/>
+        <Literal>EAES</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#puntaje"/>
+        <NamedIndividual IRI="#EXM4"/>
+        <Literal>958/1000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#codigo"/>
+        <NamedIndividual IRI="#EXM5"/>
+        <Literal>EXM005</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fecha"/>
+        <NamedIndividual IRI="#EXM5"/>
+        <Literal>20/07/2020</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hora"/>
+        <NamedIndividual IRI="#EXM5"/>
+        <Literal>10:00 am</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#EXM5"/>
+        <Literal>EAES</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#puntaje"/>
+        <NamedIndividual IRI="#EXM5"/>
+        <Literal>910/1000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#codigo"/>
+        <NamedIndividual IRI="#EXM6"/>
+        <Literal>EXM006</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fecha"/>
+        <NamedIndividual IRI="#EXM6"/>
+        <Literal>10/07/2021</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hora"/>
+        <NamedIndividual IRI="#EXM6"/>
+        <Literal>18:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#EXM6"/>
+        <Literal>EAES</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#puntaje"/>
+        <NamedIndividual IRI="#EXM6"/>
+        <Literal>872/1000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#codigo"/>
+        <NamedIndividual IRI="#EXM7"/>
+        <Literal>EXM007</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fecha"/>
+        <NamedIndividual IRI="#EXM7"/>
+        <Literal>10/07/2021</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hora"/>
+        <NamedIndividual IRI="#EXM7"/>
+        <Literal>18:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#EXM7"/>
+        <Literal>EAES</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#puntaje"/>
+        <NamedIndividual IRI="#EXM7"/>
+        <Literal>902/1000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#codigo"/>
+        <NamedIndividual IRI="#EXM8"/>
+        <Literal>EXM008</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fecha"/>
+        <NamedIndividual IRI="#EXM8"/>
+        <Literal>10/07/2021</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hora"/>
+        <NamedIndividual IRI="#EXM8"/>
+        <Literal>18:30</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#EXM8"/>
+        <Literal>EAES</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#puntaje"/>
+        <NamedIndividual IRI="#EXM8"/>
+        <Literal>980/1000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#codigo"/>
+        <NamedIndividual IRI="#EXM9"/>
+        <Literal>EXM009</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fecha"/>
+        <NamedIndividual IRI="#EXM9"/>
+        <Literal>10/07/2021</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hora"/>
+        <NamedIndividual IRI="#EXM9"/>
+        <Literal>18:30</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#EXM9"/>
+        <Literal>EAES</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#puntaje"/>
+        <NamedIndividual IRI="#EXM9"/>
+        <Literal>960/1000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#codigo"/>
+        <NamedIndividual IRI="#INS1"/>
+        <Literal>INS001</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fecha_fin"/>
+        <NamedIndividual IRI="#INS1"/>
+        <Literal>20/06/2020</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fecha_inicio"/>
+        <NamedIndividual IRI="#INS1"/>
+        <Literal>20/03/2020</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#codigo"/>
+        <NamedIndividual IRI="#INS2"/>
+        <Literal>INS002</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fecha_fin"/>
+        <NamedIndividual IRI="#INS2"/>
+        <Literal>18/05/2021</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fecha_inicio"/>
+        <NamedIndividual IRI="#INS2"/>
+        <Literal>15/02/2021</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#codigo"/>
+        <NamedIndividual IRI="#POST1"/>
+        <Literal>POS001</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fecha_fin"/>
+        <NamedIndividual IRI="#POST1"/>
+        <Literal>20/09/2020</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fecha_inicio"/>
+        <NamedIndividual IRI="#POST1"/>
+        <Literal>20/08/2020</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#num_opcion"/>
+        <NamedIndividual IRI="#POST1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#codigo"/>
+        <NamedIndividual IRI="#POST2"/>
+        <Literal>POS002</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fecha_fin"/>
+        <NamedIndividual IRI="#POST2"/>
+        <Literal>10/09/2021</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fecha_inicio"/>
+        <NamedIndividual IRI="#POST2"/>
+        <Literal>06/08/2021</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#num_opcion"/>
+        <NamedIndividual IRI="#POST2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#codigo"/>
+        <NamedIndividual IRI="#UN1"/>
+        <Literal>UN001</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#dirreccion"/>
+        <NamedIndividual IRI="#UN1"/>
+        <Literal>Av. Gral. Rumiñahui, Sangolquí 171103</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#UN1"/>
+        <Literal>Universidad de las Fuerzas Armadas</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#telefono"/>
+        <NamedIndividual IRI="#UN1"/>
+        <Literal>(02) 398-9400</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#codigo"/>
+        <NamedIndividual IRI="#UN2"/>
+        <Literal>UN002</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#dirreccion"/>
+        <NamedIndividual IRI="#UN2"/>
+        <Literal>Av. Universitaria, Quito 170129</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#UN2"/>
+        <Literal>Universidad Central del Ecuador</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#telefono"/>
+        <NamedIndividual IRI="#UN2"/>
+        <Literal>(02) 252-8810</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#codigo"/>
+        <NamedIndividual IRI="#UN3"/>
+        <Literal>UN003</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#dirreccion"/>
+        <NamedIndividual IRI="#UN3"/>
+        <Literal>Av. Ladrón de Guevara 253, Quito 170517</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#UN3"/>
+        <Literal>Escuela Politécnica Nacional</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#telefono"/>
+        <NamedIndividual IRI="#UN3"/>
+        <Literal>(+593) 2 2976 300</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#codigo"/>
+        <NamedIndividual IRI="#UN4"/>
+        <Literal>UN004</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#dirreccion"/>
+        <NamedIndividual IRI="#UN4"/>
+        <Literal>Av. los chásquis, Ambato 180207</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#UN4"/>
+        <Literal>Universidad Técnica de Ambato</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#telefono"/>
+        <NamedIndividual IRI="#UN4"/>
+        <Literal>(03)-3700090</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#codigo"/>
+        <NamedIndividual IRI="#UN5"/>
+        <Literal>UN005</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#dirreccion"/>
+        <NamedIndividual IRI="#UN5"/>
+        <Literal>Ent 1 ESPOCH, Riobamba 060155</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#UN5"/>
+        <Literal>Escuela Superior Politécnica de Chimborazo</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#telefono"/>
+        <NamedIndividual IRI="#UN5"/>
+        <Literal>(03) 299-8200</Literal>
+    </DataPropertyAssertion>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#esOfertaPor"/>
+        <ObjectProperty IRI="#tieneVarias"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#recibeLa"/>
+        <ObjectProperty IRI="#seRegistraEn"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Asigna"/>
+        <Class IRI="#CentroRegulacion"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#esAsignado"/>
+        <Class IRI="#Cupo"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#esOfertaPor"/>
+        <Class IRI="#Carrera"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#esRealizadaPor"/>
+        <Class IRI="#Postulacion"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#esRecibidaPor"/>
+        <Class IRI="#Postulacion"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#ofrecenVarios"/>
+        <Class IRI="#Carrera"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#perteneceAl"/>
+        <Class IRI="#Examen"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#realizaLa"/>
+        <Class IRI="#Aspirante"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#rindeUn"/>
+        <Class IRI="#Aspirante"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#seRegistraEn"/>
+        <Class IRI="#Inscripcion"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#tieneEnoferta"/>
+        <Class IRI="#Postulacion"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Asigna"/>
+        <Class IRI="#Cupo"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#esAsignado"/>
+        <Class IRI="#Aspirante"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#esOfertaPor"/>
+        <Class IRI="#Universidad"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#esRealizadaPor"/>
+        <Class IRI="#Aspirante"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#esRecibidaPor"/>
+        <Class IRI="#CentroRegulacion"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#ofrecenVarios"/>
+        <Class IRI="#Cupo"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#perteneceAl"/>
+        <Class IRI="#Aspirante"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#realizaLa"/>
+        <Class IRI="#Inscripcion"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#rindeUn"/>
+        <Class IRI="#Examen"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#seRegistraEn"/>
+        <Class IRI="#CentroRegulacion"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#tieneEnoferta"/>
+        <Class IRI="#Carrera"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Aceptacion"/>
+        <Class IRI="#Cupo"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#carrera"/>
+        <Class IRI="#Cupo"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#cedula"/>
+        <Class IRI="#Aspirante"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#codigo"/>
+        <Class IRI="#Aspirante"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#codigo"/>
+        <Class IRI="#Carrera"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#codigo"/>
+        <Class IRI="#CentroRegulacion"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#codigo"/>
+        <Class IRI="#Cupo"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#codigo"/>
+        <Class IRI="#Examen"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#codigo"/>
+        <Class IRI="#Inscripcion"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#codigo"/>
+        <Class IRI="#Postulacion"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#codigo"/>
+        <Class IRI="#Universidad"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#dirreccion"/>
+        <Class IRI="#Aspirante"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#dirreccion"/>
+        <Class IRI="#CentroRegulacion"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#dirreccion"/>
+        <Class IRI="#Universidad"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#fecha"/>
+        <Class IRI="#Aspirante"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#fecha"/>
+        <Class IRI="#Examen"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#fecha"/>
+        <Class IRI="#Inscripcion"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#fecha"/>
+        <Class IRI="#Postulacion"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#fecha_fin"/>
+        <Class IRI="#Inscripcion"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#fecha_fin"/>
+        <Class IRI="#Postulacion"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#fecha_inicio"/>
+        <Class IRI="#Inscripcion"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#fecha_inicio"/>
+        <Class IRI="#Postulacion"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hora"/>
+        <Class IRI="#Examen"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#nacionalidad"/>
+        <Class IRI="#Aspirante"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#nombre"/>
+        <Class IRI="#Aspirante"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#nombre"/>
+        <Class IRI="#Carrera"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#nombre"/>
+        <Class IRI="#CentroRegulacion"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#nombre"/>
+        <Class IRI="#Cupo"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#nombre"/>
+        <Class IRI="#Examen"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#nombre"/>
+        <Class IRI="#Inscripcion"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#nombre"/>
+        <Class IRI="#Postulacion"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#nombre"/>
+        <Class IRI="#Universidad"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#num_aspirantes"/>
+        <Class IRI="#Carrera"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#num_aspirantes"/>
+        <Class IRI="#Cupo"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#num_opcion"/>
+        <Class IRI="#Postulacion"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#puntaje"/>
+        <Class IRI="#Carrera"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#puntaje"/>
+        <Class IRI="#Examen"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#telefono"/>
+        <Class IRI="#Aspirante"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#telefono"/>
+        <Class IRI="#CentroRegulacion"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#telefono"/>
+        <Class IRI="#Universidad"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#Aceptacion"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#carrera"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#cedula"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#codigo"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#dirreccion"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#fecha"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#fecha_fin"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#fecha_inicio"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hora"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#nacionalidad"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#nombre"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#num_aspirantes"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#num_opcion"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#puntaje"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#telefono"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
