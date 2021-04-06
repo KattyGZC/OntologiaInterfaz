@@ -3,12 +3,9 @@
 from django.shortcuts import render, redirect
 from django.views.generic.base import TemplateView
 from django.http import HttpResponse
-from django.core import serializers
-from django.template.loader import render_to_string
 
 from owlready2 import *
 from rdflib import *
-import json
 
 class IndexView(TemplateView):
     template_name = 'index.html'
@@ -19,8 +16,7 @@ class IndexView(TemplateView):
         
         return context
 
-    def post(self, request, *args, **kwargs):
-        
+    def post(self, request, *args, **kwargs):        
         default_onto = World()
         default_onto.get_ontology("file://E:/HD anterior/OneDrive/ESPE/Noveno Semestre/Tópicos de software/OntologiaAcceso/OntologiaInterfaz/AccesoUNE.owl").load()
         graph = default_onto.as_rdflib_graph()
